@@ -1,0 +1,118 @@
+<!doctype html>
+
+<html>
+    <head>
+        
+        <!-- meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <!-- meta tags -->
+        
+        <!-- Bootstrap core CSS -->
+       
+        <link rel="stylesheet" href="../bootstrap4.1/css/bootstrap.min.css">
+         <link rel="stylesheet" href="../css/main.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="../js/index.js"></script>
+        <script type="text/javascript" src="../js/ajaxManager.js"></script>
+        <title>Just@Home</title>
+    </head>
+    
+    
+    <body onload="loadHomepageOperatore()">
+          <div class="d-flex vh-100">
+            <div class="col my-auto">
+               
+                <div class="container mb-3">
+                    <div class="col align-self-center">
+                        <div class="row">
+                            <h2 class="text-white logo mx-auto ">Just@Home</h2>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="container bg-white">
+                    <div class="col align-self-center">
+                        <div class="row">
+                            <p class="text opaco mx-auto">Consegne effettuate</p>
+                        </div>
+                        <div class="row">
+                            <p class="text big mx-auto" id="consegne_effettuate">0</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="container mt-3">
+                    <div class="row">
+                        <div class="col-6">
+                            <p class="text-left text label-selezionata" id="label-rimanenti" ontouchend="checkRimanenti('label-rimanenti', 'label-effettuate')">Rimanenti</p>
+                        </div>
+            
+                        <div class="col-6">
+                            <p class="text-right text label-non-selezionata" id="label-effettuate" ontouchend="checkEffettuate('label-rimanenti', 'label-effettuate')">Effettuate</p>
+                        </div>
+                    </div>
+                     
+                </div>
+                <div class="non-effettuate d-none">
+                    <!--
+                    <div class="container bg-white mb-2" id="roba1" ontouchend="openDetailsOrder('roba1')" >
+
+                        <div class="row align-items-center">
+                            <div class="col-2 p-0 ">
+                               <img class="img-fluid" src="../img/icon/drug-2.png">
+                            </div>
+                            <div class="col-6 ">
+                                <p class=" text-left text big mx-auto mb-0" id="roba1-tipo">Farmaci</p>
+                                <p class="text-left  text opaco mb-0" id="roba1-nome">Anna Fabbri</p>
+                            </div>
+                             <div class="col-4 ">
+                                <p class=" text-right text big mx-auto mb-0" id="roba1-luogo">Lammari</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container bg-white mb-2 " id="roba2" ontouchend="openDetailsOrder('roba2')">
+
+                        <div class="row align-items-center">
+                            <div class="col-2 p-0 ">
+                               <img class="img-fluid" src="../img/icon/drug-2.png">
+                            </div>
+                            <div class="col-6 ">
+                                <p class=" text-left text big mx-auto mb-0" id="roba2-tipo">Farmaci</p>
+                                <p class="text-left  text opaco mb-0" id="roba2-nome">Anna Fabbri</p>
+                            </div>
+                             <div class="col-4 ">
+                                <p class=" text-right text big mx-auto mb-0" id="roba2-luogo">Lammari</p>
+                            </div>
+                        </div>
+                    </div>
+                    -->
+                </div>
+                <div class="effettuate ">
+                    <!--
+                     <div class="container bg-white" id="roba3" ontouchend="openDetailsOrder('roba3')">
+
+                        <div class="row align-items-center">
+                            <div class="col-2 p-0 ">
+                               <img class="img-fluid" src="../img/icon/drug-2.png">
+                            </div>
+                            <div class="col-6 ">
+                                <p class=" text-left text big mx-auto mb-0" id="roba3-tipo">Farmaci</p>
+                                <p class="text-left  text opaco mb-0" id="roba3-nome">Anna Fabbri</p>
+                            </div>
+                             <div class="col-4 ">
+                                <p class=" text-right text big mx-auto mb-0" id="roba3-luogo">Lammari</p>
+                            </div>
+                        </div>
+                    </div>
+                    -->
+                </div>
+                
+                
+            </div>
+        </div>
+    </body>
+</html>

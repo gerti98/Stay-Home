@@ -1,0 +1,111 @@
+body{
+    background-color: #5892F6;
+}
+
+.form-control{
+    border-radius: 60px 60px 60px 60px;
+}
+
+#textarea {
+    border-radius: 20px 20px 20px 20px;
+}
+.btn-primary{
+    background-color: #0045BB;
+    border-radius: 60px 60px 60px 60px;
+    padding: .375rem 2rem;
+}
+.link{
+    color: #07079A;
+}
+a:not([href]){
+    color: #07079A;
+}
+
+.logo{
+    
+    font-family: SF Pro Display;
+    font-weight: bold;
+    text-align: center;
+}
+
+.text{
+    font-family: SF Pro Display;
+    font-weight: medium;
+    text-align: center;
+    color: black;
+    font-size: 19px;
+}
+
+.big{
+    font-size: 25px;
+}
+.opaco{
+     opacity: 50%;
+}
+
+.bg-white{
+    border-radius: 20px 20px 20px 20px;
+    padding: .375rem 2rem;
+}
+
+.non-effettuate .text{
+    color: white;
+}
+.non-effettuate .bg-white{
+    background-color: rgba(0,0,0,0) !important ; 
+    border: 1px solid white;
+}
+
+#pulsanti_richiesta .bg-white{
+    padding: .375rem 1rem;
+}
+
+.selezionato{
+    
+    background-color: rgba(0,0,0,0) !important ; 
+    border: 1px solid white;
+}
+
+.selezionato p{
+    color: white ;
+}
+
+.full-button{
+    
+    width: 100%;
+    background-color: white;
+    color: #0045BB;
+}
+
+.form-control[readonly]{
+    background-color: white;
+}
+
+.label-selezionata{
+    font-weight: bold;
+    text-decoration: underline;
+    color: white
+}
+
+.label-non-selezionata{
+    font-weight: normal;
+    text-decoration: none;
+    color: black;
+    opacity: 50%;
+}
+
+.button-completato{
+    background-color: rgba(0,0,0,0) !important ; 
+    border: 1px solid white !important;
+    color: white !important;
+}
+
+
+}
+
+
+
+
+
+
+

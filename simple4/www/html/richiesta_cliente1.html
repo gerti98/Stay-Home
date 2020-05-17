@@ -1,0 +1,115 @@
+<!doctype html>
+
+<html>
+    <head>
+        
+        <!-- meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <!-- meta tags -->
+        
+        <!-- Bootstrap core CSS -->
+       
+        <link rel="stylesheet" href="../bootstrap4.1/css/bootstrap.min.css">
+         <link rel="stylesheet" href="../css/main.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="../js/index.js"></script>
+        <title>Just@Home</title>
+    </head>
+    
+    
+    <body>
+          <div class="d-flex vh-100">
+            <div class="col my-auto">
+               
+                <div class="container mb-3">
+                    <div class="row align-items-center mb-2">
+                        <div class="col-1 p-0">
+                            <img class="img-fluid" src="../img/icon/back-2.svg" ontouchend="turnBackCliente()">
+                        </div>
+                        <div class="col-10 ">
+                            <h2 class="text-white logo mx-auto mb-0">Just@Home</h2>
+                        </div>
+                    </div>
+                </div>
+                
+    
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <p class="text text-white text-left mb-2">Ho bisogno di:</p>
+                        </div>
+                    </div>
+                </div>
+                
+                 <div class="container">
+                    <div class="row">
+                        <div class="col-6">
+                            <button class="bg-white selezionato" id="box-farmaci" ontouchend="handleButtonViveriMed('box-farmaci', 'box-viveri')">
+                                    <div class="row align-items-center">
+                                        <div class="col-3 p-0">
+                                            <img class="img-fluid" src="../img/icon/drug-2.png">
+                                        </div>
+                                        <div class="col-9 p-0">
+                                            <p class="text mb-0">Farmaci</p>
+                                        </div>
+                                    </div>
+                            </button>
+                        </div>
+                         <div class="col-6 ">
+                             <button class="bg-white" id="box-viveri" ontouchend="handleButtonViveriMed('box-viveri', 'box-farmaci')">
+                                <div class="row align-items-center">
+                                    <div class="col-3 p-0">
+                                        <img class="img-fluid" src="../img/icon/shopping-cart.png">
+                                    </div>
+                                    <div class="col-9 p-0">
+                                        <p class="text mb-0">Viveri</p>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="container mt-2">
+                    <div class="row">
+                        <div class="col">
+                            <p class="text text-white text-left mb-2">Descrizione:</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <textarea class="form-control " rows="7" aria-label="With textarea" placeholder="Descrivi di cosa hai bisogno" id="textarea"></textarea>
+                        </div>
+                    </div>
+                
+                </div>
+                
+                 <div class="container mt-2" id="pulsanti_richiesta">
+                    <div class="row">
+                        <div class="col-6">
+                            <button class="bg-white">Aggiungi posizione</button>
+                        </div>
+                         <div class="col-6">
+                             <button class="bg-white" id="foto" ontouchend="pic.handleTakePicture()">Aggiungi foto</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="container mt-4">
+                    <div class="row align-items-center">
+                        <div class="col">
+                            <button type="submit" class="btn btn-primary  mx-auto d-block">Richiedi consegna</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
